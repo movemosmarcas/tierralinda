@@ -1008,7 +1008,26 @@ h1, h2, h3, h4, .serif {
     .amenity-block .amenity-text::after { display: none; }
     .modern-grid { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; }
     .quote-card { flex-direction: column; }
+    .quote-content { padding: 3rem 1.5rem; text-align: center; }
+    .quote-content h2 { font-size: 2.5rem; }
+    .cta-group { justify-content: center; }
     .map-layout { grid-template-columns: 1fr; }
+
+    /* Sticky Bar Móvil: Solo Botón Flotante */
+    .sticky-bar {
+        background: transparent;
+        box-shadow: none;
+        bottom: 15px;
+        pointer-events: none;
+    }
+    .sticky-text {
+        display: none;
+    }
+    .sticky-bar .btn-whatsapp {
+        pointer-events: auto;
+        width: 100%;
+        box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+    }
 }
 .highlight-orange { color: var(--primary) !important; }
 /* Popup Style */
